@@ -21,6 +21,12 @@
             <ColumnDefinition Width="0.25*"/>
         </Grid.ColumnDefinitions>
 
+        <AppBar Grid.Row="0"
+                Grid.Column="0" Grid.ColumnSpan="3">
+            <AppBarButton Content="Home"
+                          Click="AppBarHomePage_Click"/>
+        </AppBar>
+                
         <TextBlock Grid.Row="1"
                    Grid.Column="1"
                    HorizontalAlignment="Left" VerticalAlignment="Top"
@@ -30,13 +36,23 @@
                    HorizontalAlignment="Left" VerticalAlignment="Top"
                    Text="Order Items:"/>
 
-        <TextBlock Grid.Row="4"
-                   Grid.Column="0"
-                   HorizontalAlignment="Center" VerticalAlignment="Center"
-                   Text="**Add to Order**"/>
-        <TextBlock Grid.Row="4"
-                   Grid.Column="1" Grid.ColumnSpan="2"
-                   HorizontalAlignment="Center" VerticalAlignment="Center"
-                   Text="**Submit Order**"/>
+        <ListView Grid.Row="1" Grid.RowSpan="2"
+                  Grid.Column="0"
+                  Margin="10"
+                  Background="Green"/>
+
+        <ListView Grid.Row="2"
+                  Grid.Column="2"
+                  Margin="10"
+                  Background="Blue"/>
+        
+        <Button Grid.Row="4"
+                Grid.Column="0"
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Content="Add to Order"/>
+        <Button Grid.Row="4"
+                Grid.Column="1" Grid.ColumnSpan="2"
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Content="Submit Order"/>
     </Grid>
 </Page>

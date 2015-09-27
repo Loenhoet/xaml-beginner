@@ -26,5 +26,10 @@ namespace RestaurantManager.UniversalWindows
         {
             this.InitializeComponent();
         }
+
+        private void AppBarHomePage_Click(object sender, RoutedEventArgs e)
+        {
+            Content = new MainPage();
+        }
     }
 }
