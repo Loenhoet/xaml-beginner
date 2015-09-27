@@ -29,12 +29,12 @@ namespace RestaurantManager.UniversalWindows
 
         private void Expeditepage_Click(object sender, RoutedEventArgs e)
         {
-            Content = new ExpeditePage();
+            Frame.Navigate(typeof(ExpeditePage));
         }
 
         private void OrderPage_Click(object sender, RoutedEventArgs e)
         {
-            Content = new OrderPage();
+            Frame.Navigate(typeof(OrderPage));
         }
     }
 }

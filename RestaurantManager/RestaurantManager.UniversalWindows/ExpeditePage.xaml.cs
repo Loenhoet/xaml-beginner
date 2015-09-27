@@ -29,7 +29,7 @@ namespace RestaurantManager.UniversalWindows
 
         private void AppBarHomePage_Click(object sender, RoutedEventArgs e)
         {
-            Content = new MainPage();
+            Frame.Navigate(typeof(MainPage));
         }
     }
 }
